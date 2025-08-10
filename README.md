@@ -4,7 +4,6 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-brightgreen)]()
 [![MySQL](https://img.shields.io/badge/MySQL-blue)]()
 [![React](https://img.shields.io/badge/React-61DAFB)]()
-[![HTML](https://img.shields.io/badge/HTML-orange)]()
 [![CSS](https://img.shields.io/badge/CSS-blue)]()
 [![JavaScript](https://img.shields.io/badge/JavaScript-yellow)]()
 
