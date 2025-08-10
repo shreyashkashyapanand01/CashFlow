@@ -86,15 +86,9 @@ mvn spring-boot:run
 cd ./frontend
 npm install
 npm start
----
+
 ```
 ## 📸 Screenshots
-
-> _Add real screenshots here after deployment._
-- Dashboard View
-- Add Transaction Form
-- Analytics Charts
-- Admin Panel
   ![Screenshot 1](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140637.png)  
   ![Screenshot 2](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140652.png)  
   ![Screenshot 3](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140701.png)  
