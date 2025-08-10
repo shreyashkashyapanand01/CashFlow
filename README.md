@@ -1,76 +1,117 @@
-<h1 align="center">🌟 My Wallet - Expense tracking app 🌟</h1>
+# 💰 CashFlow – Personal Finance Tracker
 
-<p align="center">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Spring%20Boot-darkgreen?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/React.js-blue?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/mysql-red?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/css-purple?style=for-the-badge">
-  <img alt="Static Badge" src="https://img.shields.io/badge/jwt-orange?style=for-the-badge">
-</p>
+[![Java](https://img.shields.io/badge/Java-orange)]()
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-brightgreen)]()
+[![MySQL](https://img.shields.io/badge/MySQL-blue)]()
+[![React](https://img.shields.io/badge/React-61DAFB)]()
+[![HTML](https://img.shields.io/badge/HTML-orange)]()
+[![CSS](https://img.shields.io/badge/CSS-blue)]()
+[![JavaScript](https://img.shields.io/badge/JavaScript-yellow)]()
 
-## Table of contents
 
-1. [Descripiton](#description)
-2. [How to run?](#how-to-run)
-3. [Screenshots](#screenshots)
 
-## Description
+**Track. Manage. Grow.**  
+CashFlow is a **full-stack** personal finance tracker that lets users log income, monitor expenses, analyze spending patterns, and achieve budget goals.  
+Built with **Spring Boot**, **MySQL**, and **React**, it’s secure, scalable, and easy to use.
 
-- Developed a full-stack expense tracking web application using Spring Boot, React.js, and MySQL, facilitating seamless management of day-to-day finances.
-- Implemented multi-role functionality with user authentication, enabling secure access for both users and administrators, with features such as sign-in, sign-up, password reset, and email verification.
-- Developed intuitive user dashboards, transaction management, upcoming/recurring transactions tracking, monthly summaries, and statistics, budget management.
-- Developed categories, users and transactions management for administrators.
-- Implemented management capabilities including search, filter and pagination.
+---
 
-## How to run?
+## ✨ Features
 
-### Step 1: Fork and Clone the Repository
+### 🧑‍💻 User Features
+- **Secure Authentication**
+    - Email **OTP verification** during registration
+    - **Password recovery** with OTP reset
+- **Income & Expense Tracking**
+    - Add, update, delete transactions
+    - Categorize spending for better insights
+- **Data Visualization**
+    - Interactive monthly/yearly charts
+    - Expense breakdown by category
+- **Responsive UI**
+    - Works on desktop, tablet, and mobile
 
-1. Fork the repository to your GitHub account.
+### 🛠 Admin Module
+- **User Management**
+    - View, edit, or delete users
+    - Activate/deactivate accounts
+- **Category Management**
+    - Add/remove categories dynamically
+- **Analytics Dashboard**
+    - System-wide expense trends
+    - Revenue & usage analytics
 
-2. Clone the forked repository to your local machine.
+---
 
-```sh
-git clone https://github.com/<your-username>/Fullstack-Expense-Tracker
-```
+## 🏗 Architecture & Tech Stack
 
-### Step 2: Setting up e-mail and database configurations
+| Layer           | Technologies |
+|-----------------|--------------|
+| **Frontend**    | HTML, CSS, JavaScript, React |
+| **Backend**     | Spring Boot, Spring Security, Spring Data JPA |
+| **Database**    | MySQL |
+| **Build Tool**  | Maven |
+| **Security**    | JWT Auth, BCrypt Hashing, Email OTP |
+| **Visualization** | Chart.js |
 
-- Configure the following credentials in the [`application.properties`](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/main/backend/src/main/resources/application.properties) file.
 
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/YOUR_DATABASE_NAME
-spring.datasource.username=YOUR_USERNAME
-spring.datasource.password=YOUR_PASSWORD
+## ⚙️ Getting Started
 
-spring.mail.username=YOUR_USERNAME
-spring.mail.password=YOUR_PASSWORD
-```
+### 📌 Prerequisites
+- Java JDK 11+
+- Maven
+- MySQL Server
+- Node.js (for frontend)
 
-### Step 3: Run the backend.
+### 🚀 Backend Setup
+```bash
+# Navigate to backend
+cd backend
 
-- Run the backend application. It will automatically create the required tables. 
-- Add some custom data manually in the [categories](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/Category.java#L13) table for both [type](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/TransactionType.java#L13) `expense` and `income`.
-- To start as admin, Insert a new user manually with role admin in [`users`](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/blob/7ecea71aaeca4e26a4aafd02fd602abe4d9da67d/backend/src/main/java/com/fullStack/expenseTracker/models/User.java#L20) table.
+# Configure DB & SMTP in src/main/resources/application.properties
+spring.datasource.url=jdbc:mysql://localhost:3306/expensetracker
+spring.datasource.username=your_mysql_username
+spring.datasource.password=your_mysql_password
 
-### Step 4: Run the frontend
+spring.mail.username=your_email@gmail.com
+spring.mail.password=your_email_app_password
 
-1. Navigate to [frontend direcory](https://github.com/DharshiBalasubramaniyam/Fullstack-Expense-Tracker/tree/main/frontend).
-```
+# Run backend
+mvn spring-boot:run
+ ```
+### 🚀 Fontend Setup
+```bash
+# Navigate to backend
+
 cd ./frontend
-```
-
-2. Install dependencies.
-```
 npm install
-```
-
-3. Run the app.
-```
 npm start
+---
 ```
+## 📸 Screenshots
 
-Access the application at [`http://localhost:3000/`](http://localhost:3000/).
-To get started create a new account using your email.
+> _Add real screenshots here after deployment._
+- Dashboard View
+- Add Transaction Form
+- Analytics Charts
+- Admin Panel
+  ![Screenshot 1](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140637.png)  
+  ![Screenshot 2](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140652.png)  
+  ![Screenshot 3](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140701.png)  
+  ![Screenshot 4](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140711.png)  
+  ![Screenshot 5](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140721.png)  
+  ![Screenshot 6](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140737.png)  
+  ![Screenshot 7](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140756.png)  
+  ![Screenshot 8](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140805.png)  
+  ![Screenshot 9](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140816.png)  
+  ![Screenshot 10](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140827.png)  
+  ![Screenshot 11](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140841.png)  
+  ![Screenshot 12](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140857.png)  
+  ![Screenshot 13](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140907.png)  
+  ![Screenshot 14](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140915.png)  
+  ![Screenshot 15](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140923.png)  
+  ![Screenshot 16](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140931.png)  
+  ![Screenshot 17](frontend/SCREENSHOTS/Screenshot%202025-08-10%20140938.png)
 
-## Screenshots
+
+---
